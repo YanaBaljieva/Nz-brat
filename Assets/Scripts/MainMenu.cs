@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene(Random.Range(1, SceneManager.sceneCount + 1));
+        SceneManager.LoadScene(Random.Range(1, SceneManager.sceneCountInBuildSettings));
     }
 
     public void QuitGame()

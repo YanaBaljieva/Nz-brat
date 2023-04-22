@@ -7,7 +7,19 @@ public class GameOver : MonoBehaviour
 {
     public void PlayAgain()
     {
-        SceneManager.LoadScene(Random.Range(1, SceneManager.sceneCount + 1));
+        
+        while (true) {
+            
+            int random = Random.Range(1, SceneManager.sceneCountInBuildSettings);
+            if (random != SceneManager.GetActiveScene().buildIndex)
+            {
+                SceneManager.LoadScene(random);
+                break;
+            }
+        }
+        
+       
+        
         Time.timeScale = 1f;
     }
 
