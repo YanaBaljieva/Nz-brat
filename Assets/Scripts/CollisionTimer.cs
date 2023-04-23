@@ -16,7 +16,7 @@ public class CollisionTimer : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        duration = 0.0f;
+        Timer();
     }
 
     public void Timer()
