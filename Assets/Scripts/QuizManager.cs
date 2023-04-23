@@ -21,6 +21,7 @@ public class QuizManager : MonoBehaviour
         int val = Random.Range(0, questions.Count);
         selectedQuestion = questions[val];
 
+        Debug.Log(val);
         quizUI.SetQuestion(selectedQuestion);
     }
     public bool Answer(string answered)
